@@ -9,11 +9,46 @@ h2{
 
 
 
+label{
+  color: black;
+  text-align : left;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+input[type=text]{
+  width: 300px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: Helvetica;
+  float: right;
+  clear:both;
+}
+
+
+
+input[type=submit]{
+  width: 300px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: red;
+  color:white;
+  font-family: Helvetica;
+  float: right;
+  clear:both;
+}
+
+a{
+  color: #96CA2D;
+}
+
 nav>ul>li:hover{
   background-color: #009900;
 }
 
-nav>ul>li:selection{
+nav>ul>li a:selection{
   background-color: #009900;
 }
 
