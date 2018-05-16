@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter Commande</title>
+</head>
+<body>
+<header>
+    <title>La Florentina</title>
+</header>
+<nav>
+    <h1>Pizzéria</h1>
+    <ul>
+        <li><a href="Accueil.html">Accueil</a></li>
+        <li><a href="ListerPizza.html">Nos Pizzas</a></li>
+        <li><a href="ListerCommande.html">Nos Commandes</a> </li>
+        <li><a href="ListerClient.html">Client</a></li>
+    </ul>
+</nav>
+<h1> Gestion des commandes </h1>
+<h2> Ajout d'une commande</h2>
+<a href="Accueil.html">Retour à l'accueil</a>
+<form action="#" method="POST">
+    <label for="numero">Numero</label> <input id="numero" type="text" placeholder="identifiant commande" ><br>
+    <label for="date">Date</label> <input id="date" type="date" ><br>
+    <label for="livreur">Livreur</label>
+    <select id="livreur" >
+        <option>Lionel ARMAND</option>
+        <option>Marguerite JOURNEE</option>
+        <option>Arthur SPIDE</option>
+    </select><br>
+    <label for="client">Client</label>
+    <select id="client" >
+        <option value="1">ARMANI Sophie</option>
+        <option value="2">BERURIER Laurent</option>
+        <option value="3">DENIS Sylvain</option>
+    </select><br>
+    <input type="submit" name="ajout" value="Ajouter">
+</form>
+
+</body>
+</html>

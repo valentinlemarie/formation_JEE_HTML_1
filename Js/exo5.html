@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>Javascript</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var tab =[15,12,18,14,16,16,19,13,11,10,16,15];
+    function moy (table){
+      var moyenne = 0;
+      for(i = 0 ; i<table.length ; i++){
+        moyenne = moyenne +table[i] ;
+      }
+      return (moyenne/table.length).toFixed(2);
+    }
+    alert(tab.length);
+    alert("la taille de la table est "+moy(tab));
+  </script>
+</body>
+</html>

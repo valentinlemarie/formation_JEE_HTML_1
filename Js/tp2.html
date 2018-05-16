@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf8"/>
+      <title>tp2</title>
+      <script type = "application/javascript">
+            var data_file = "http://loisirs-web-backend.cleverapps.io/db";
+            var http_request = new XMLHttpRequest();
+
+            http_request.onreadystatechange = function(){
+
+               if (this.readyState == 4 && this.status ==200 ){
+
+                  var jsonObj = JSON.parse(http_request.responseText);
+                  affichagelistUser(jsonObj.users);
+
+               }
+            }
+
+            http_request.open("GET", data_file, true);
+            http_request.send();
+
+
+         function affichagelistUser(arr){
+           var out = "<table border='1px solid black' ><li><th>Id</th><th>Name</th><th>Password</th>";
+            var i;
+            for(i = 0; i < arr.length; i++) {
+                out +="<tr><td>"+arr[i].id+"</td><td>"+arr[i].name+"</td><td>"+arr[i].password+"</td></tr>";
+            }
+            out+="</table>"
+            document.getElementById("Users").innerHTML = out;
+         }
+
+      </script>
+
+   </head>
+
+   <body onload="loadJSON()">
+
+      <div id = "Users"></div>
+      <div id = "Password"></div>
+
+
+   </body>
+
+</html>

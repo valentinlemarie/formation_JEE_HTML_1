@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <title>Javascript</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    document.write("<table border='1px solid black' >")
+    document.write("<tr><th colspan='4'>Je suis un titre de tableau :-)</th> </caption>")
+    for(i=0 ;i<12;i++){
+      if (i%4==0) {
+          document.write("</tr>");
+          document.write("<tr>");
+      }
+      document.write("<td>"+i+"</td>");
+    }
+    document.write("</tr>");
+    document.write("</table>");
+  </script>
+</body>
+</html>

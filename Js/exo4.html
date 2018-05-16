@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <title>Javascript</title>
+</head>
+<body>
+
+
+    <input type="text" id="nom">
+    <input type="submit" onclick="get_personne()" name="Quel age as-tu ?"   />
+
+  <script type="text/javascript">
+   var personnes = {
+     "anatole":19,
+     "bernard":45,
+     "chriistophe":34,
+     "dominique":55,
+     "franck":28,
+     "georges":78,
+     "lucas":12,
+     "madelaine":30,
+     "pierre":25
+   }
+
+  function premiereLettreMaj(msr) {    return msr.charAt(0).toUpperCase() + msr.slice(1);}
+
+    function get_personne(){
+      var perso = document.getElementById("nom").value.toLowerCase();
+      if(personnes[perso]=== undefined){
+        alert(premiereLettreMaj(perso)+" est inconnu au batallion");
+      }else{
+        alert(premiereLettreMaj(perso)+" a "+personnes[perso]+" ans");
+    }
+    }
+
+  </script>
+</body>
+</html>
