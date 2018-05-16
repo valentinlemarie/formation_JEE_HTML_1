@@ -1,0 +1,36 @@
+body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+html{
+  height:100%;
+}
+
+#carre{
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    background: red;
+    animation: rotation 5s infinite;
+
+
+
+}
+
+#carre:hover{
+  width: 300px;
+}
+
+
+
+@keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        } to {
+            transform: rotate(360deg);
+        }
+}
