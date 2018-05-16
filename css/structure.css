@@ -1,0 +1,46 @@
+body {
+font-family: 'Helvetica', 'Arial', sans-serif;
+display: flex;
+flex-direction: row ;
+flex-wrap: wrap;
+text-align: center;
+flex : 1 100%;
+}
+body>*{
+  flex: 1 100%;
+}
+* {
+padding: 10px;
+text-align: center;
+}
+header {
+background-color: tomato;
+width:100%
+}
+.left-aside {
+background-color: gold;
+}
+.right-aside {
+background-color: hotpink;
+}
+main {
+background-color: deepskyblue;
+}
+footer {
+background-color: lightgreen;
+width: 100%
+}
+
+
+
+@media all and (min-width: 600px) {
+  .left-aside{flex : 1 auto;}
+  .right-aside{flex : 1 auto;}
+}
+
+@media all and (max-width: 800px) {
+  .left-aside { order: 1; }
+  main    {  order: 2;flex: 3 0px;}
+  .right-aside { order: 3; }
+  footer   { order:4 ;  }
+}
