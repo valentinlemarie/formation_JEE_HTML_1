@@ -1,0 +1,42 @@
+h1{
+  color : #C03000;
+
+}
+
+h2{
+  color:#4BB5C1;
+}
+
+
+
+nav>ul>li:hover{
+  background-color: #009900;
+}
+
+nav>ul>li:selection{
+  background-color: #009900;
+}
+
+footer a{
+  color: #0000FF;
+  text-decoration: none;
+}
+
+body{
+  background-color: #EFECCA;
+  font-family: 'Helvetica','Arial';
+}
+
+
+nav>ul>li a{
+  color : white;
+}
+
+nav>ul>li{
+  display: inline-block;
+  background-color: #C03000;
+  border : 1px solid #660000;
+  list-style-type: none;
+  margin: 0.5em;
+  padding:10px;
+}
